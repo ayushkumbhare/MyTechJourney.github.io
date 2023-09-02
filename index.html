@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myWorld!!</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfeb314aea.js" crossorigin="anonymous"></script>
+
+    
+
+</head>
+<body>
+    <div class="header"> 
+        <div class="navcontainer container">
+            <nav>
+                <a href="#"><img src="Image/logo.png" class="logo"></a>
+                <ul id="slidingmenu">
+                    <li><a href="#about" onclick="smallscreen()">About</a></li>
+                    <li><a href="#projectsection" onclick="smallscreen()">Project</a></li>
+                    <li><a href="#contact" onclick="smallscreen()">Contact</a></li>
+                    <li><a href="Resume/Ayush-Kumbhare{Resume}.pdf" download >Resume</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="headerText container">
+            <p>Developer</p>
+            <h1>Hi, I'm <span class="symbol">Ayush</span> Kumbhare<br>from India.</h1>
+        </div>
+    </div>
+
+    
+    <div id="about">
+        <div class="aboutcontainer container">
+            <div class="row">
+                <div class="leftbox">
+                    <img src="Image/Wing.png">
+                </div>
+                <div class="rightbox about-me">
+                    <h1 class="about-me-head">About Me</h1>
+                    <p>Studying at Visvesvaraya National Institute of Technology, I'm an eager engineer with a strong passion for coding and cybersecurity. I'm a curious soul, embracing technology, creativity, and continuous learning.</p>
+
+                    <div class="about-me-title">
+                        <p class="title skill active" onclick="changetab('skill')">Skill</p>
+                        <p class="title education " onclick="changetab('education')">Education</p>
+                        <p class="title project" onclick="changetab('project')">Project</p>
+                    </div>
+                    <div class="titlecontent skillcontent activecontent" id="skill">
+                        <ul>
+                            <li><span><b>WebDev</b></span><br>
+                                <div>- Design, Code, Deploy the Website.</div>
+                                <div>- <b>MERN</b> Stack Developer.</div></li>
+                            <li><span><b>C++ & DSA</b></span><br>
+                                <div>- Skilled coder with strong algorithms expertise.</div>
+                                <div>- Solving Problems on <a href="https://leetcode.com/ayushkumbhare300/"><b>leetcode</b></a></div>
+                            </li>
+                            <li><span><b>CyberSecurity</b></span><br><div>- Web Security testing.</div></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="titlecontent educationcontent" id="education">
+                        <ul>
+                            <li><span><b>10th</b></span><br><div>- Sanskar Vidya Sagar, Nagpur, Maharashtra, India.</div></li>
+                            <li><span><b>12th</b></span><br><div>- St. Pual, Nagpur, Maharashtra, India.</div></li>
+                            <li><span><b>B.Tech</b></span><br><div>- Visvesvaraya National Institute of Technology, India.</div></li>
+                        </ul>
+                    </div>
+                    <div class="titlecontent projectcontent" id="project">
+                        <ul>
+                            <li><span><b>Portfolio</b></span><br><div>- The beginning of a journey in Web Development.</div></li>
+                            <li><span><b>YourNotes</b></span><br><div>- Safekeeping your notes.</div></li>
+                            <li><span>Chrome Extention</span><br><div>- coming soon...</div></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="projectsection">
+        <div class="container">
+            <h1 class="projecttile">My Project</h1>
+            
+            <div class="projectcontainer">
+                <a href="#">
+                    <div>
+                        <h2><ul>Portfolio</ul></h2>
+                        <p>- Little about me </p>
+                        <p>- Used <b>HTML</b>, <b>CSS</b> & <b>JavaScript</b>.  Integrated additional projects into this page.</p>
+                        <p>- I have implemented a contact form to facilitate communication, & the data stored using <b>mongoDB</b> dataBase. </p>
+                        <br>
+                        <b>Visit It >></b>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h2>YourNotes</h2>
+                        <p>- Store your own notes.</p>
+                        <p>- Used <b>HTML</b>, <b>CSS</b> & <b>JavaScript</b>. Store the notes into localStorage.</p>
+                        <p>- Used <b>mongoDB</b>, <b>Expressjs</b> & <b>Nodejs</b>. Using login system to ensure you get your notes.</p>
+                        <br>
+                        <b>Visit It >></b>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <h2>Login Form</h2>
+                        <p>- Authenticate yourself.</p>
+                        <p>- Backend Technology, to verify the valid user.</p>
+                        <p>- Used <b>mongoDB</b>, <b>Expressjs</b>, <b>Nodejs</b> & other npm packages like &#8594 <b>bcryptjs</b>, <b>jsonwebtoken</b>, <b>validator</b>.</p>
+                        <br>
+                        <b>Visit It >></b>
+                    </div>
+                </a>
+                <div>
+                    <h2>News</h2>
+                    <p>Comming soon...</p>
+                    <p>Patience will prove to be worthwhile.</p>
+                    <a href="#projectsection">Visit It</a> >>
+                </div>
+                <div>
+                    <h2>Movie Catalogue</h2>
+                    <p>Comming soon...</p>
+                    <p>Patience will prove to be worthwhile.</p>
+                    <a href="#projectsection">Visit It</a> >>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> ayushkumbhare300@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> 9021616118</p>
+                    <div class="sociallink">
+                        <div><a href="https://www.linkedin.com/in/ayush-kumbhare-736379202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                        <div><a href="https://leetcode.com/ayushkumbhare300/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg></a></div>
+                        <div><a href="https://www.instagram.com/_ayush_kumbhare_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></div>
+                    </div>
+                    <a href="Resume/Ayush-Kumbhare{Resume}.pdf" download class="btn">Download CV</a>
+                </div>
+
+                <div class="contactright">
+                    <form action="#" method="post" >
+                        <input type="text" name="name" id="name" placeholder="Your Name" required minlength="2" maxlength="30">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required minlength="5" maxlength="30">
+                        <input type="text" name="phone" pattern="\d{10}" placeholder="Your Number">
+                        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Message" required  minlength="5" maxlength="500"></textarea>
+                        <button type="submit" class="sub-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>

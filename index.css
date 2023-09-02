@@ -1,0 +1,690 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+    color: aliceblue;
+}
+
+/* ----------- input number arrow solution ------------ */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+/* ---------------------------------------------------- */
+
+
+.header {
+    height: max(100vh,600px);
+    width: 100%;
+    background-image: url("Image/first.png");
+    background-repeat: no-repeat;
+    background-position: right 5vw top 140px;
+    background-size: contain;
+}
+
+.logo {
+    width: max(8vw, 70px);
+}
+
+.container {
+    padding: max(3%, 25px) 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 35vw;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    font-size: smaller;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: rgb(199, 31, 31);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* -------------------------- */
+
+
+.headerText {
+    margin-top: 120px;
+}
+
+.headerText p {
+    color: crimson;
+    margin: 5px 1px;
+    font-size: 25px;
+}
+
+.headerText h1 {
+    font-size: 40px;
+}
+
+.symbol {
+    color: crimson;
+}
+
+
+/* ---------------about------------- */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px 0px;
+}
+
+
+.leftbox {
+    flex-basis: 40%;
+}
+
+.leftbox img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+.rightbox {
+    flex-basis: 50%;
+}
+
+.about-me {
+    font-size: 16px;
+}
+
+.about-me-head {
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(0, 253, 253);
+    padding-bottom: 18px;
+}
+
+.about-me p {
+    line-height: 1.5;
+}
+
+.about-me-title {
+    display: flex;
+    padding: 40px 0px 20px 0px;
+}
+
+
+.title {
+    font-size: 18px;
+    margin-right: 50px;
+    margin-top: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: rgb(68, 202, 202);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+}
+
+.title:hover::after {
+    width: 100%;
+}
+
+
+
+.titlecontent ul li {
+    margin: 12px 0;
+    list-style: none;
+}
+
+.titlecontent ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 181, 181);
+}
+
+
+.active {
+    font-size: 18px;
+    margin-right: 50px;
+    margin-top: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: rgb(68, 202, 202);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+
+.titlecontent {
+    display: none;
+}
+
+
+.activecontent {
+    display: block;
+}
+
+
+/* -------------------- Project ------------------- */
+
+#projectsection {
+    padding: 40px 0;
+}
+
+.projecttile {
+    padding: 10px 0;
+}
+
+.projectcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.projectcontainer div {
+    background-color: rgb(86, 86, 86);
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.projectcontainer div:hover {
+    background-color: red;
+    transform: translateY(-10px);
+}
+
+.projectcontainer div h2 {
+    color: azure;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.projectcontainer div p {
+    margin-top: 15px;
+}
+
+.projectcontainer div a {
+    text-decoration: underline;
+    color: aliceblue;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* ---------------- contact ------------------ */
+
+.contactleft {
+    flex-basis: 35%;
+}
+
+.contactright {
+    flex-basis: 60%;
+}
+
+.contactleft h1 {
+    color: aqua;
+    margin-bottom: 60px;
+}
+
+.contactleft p {
+    margin-bottom: 30px;
+}
+
+.contactleft p i {
+    color: rgb(4, 187, 187);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.sociallink {
+    display: flex;
+}
+
+.sociallink div {
+    margin: 10px;
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    transition: transform 0.5s;
+}
+
+.sociallink div:hover {
+    background-color: red;
+    /* transform: translateY(10px); */
+}
+
+.sociallink {
+    padding-top: 15px;
+}
+
+.sociallink div a {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+
+.contactleft a {
+    display: inline-block;
+    color: azure;
+    text-decoration: none;
+}
+
+.btn {
+    margin: 30px 10px;
+    border-style: solid;
+    border-color: red;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 15px 40px;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+
+.contactright form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px 0;
+
+}
+
+.sub-btn {
+    background-color: red;
+    color: azure;
+    border: solid red;
+    padding: 15px 40px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* --------------- cross help ----------------- */
+.navcontainer nav ul i {
+    display: none;
+}
+
+.navcontainer nav i {
+    display: none;
+}
+
+#profile {
+    display: block;
+}
+
+
+/* -------------------- Screen ---------------- */
+
+/* @media (min-height:450px) and (max-height:720px) {
+
+
+} */
+/* -------------------- Screen ---------------- */
+
+@media (min-width:450px) and (max-width:720px) {
+    #slidingmenu {
+        transition: 0.4s;
+    }
+
+    .header {
+        height: 600px;
+        background-position: right 1vw bottom 10px;
+        background-size: 230px;
+    }
+
+    .headerText p {
+        font-size: 2.5vw;
+    }
+
+
+    .header h1 {
+        font-size: 4vw;
+    }
+
+    .row {
+        display: block;
+        padding: 20px 0px;
+        margin: 0px 5px;
+    }
+
+    .contactleft p {
+        font-size: 17px;
+    }
+
+    .navcontainer nav ul i {
+        display: block;
+    }
+
+    .navcontainer nav i {
+        display: block;
+        font-size: 20px;
+    }
+
+    .navcontainer nav ul {
+        background-color: red;
+        position: fixed;
+        /* right: 0px; */
+        top: 0px;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        text-align: center;
+        right: -200px;
+        /* transition: right 0.5s; */
+    }
+
+    .navcontainer nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .navcontainer nav i {
+        cursor: pointer;
+    }
+
+    .navcontainer nav ul i {
+        cursor: pointer;
+        padding: 15%;
+    }
+
+    .navcontainer nav ul li {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15%;
+    }
+}
+
+@media (min-width:600px) and (max-width:1050px) {   
+
+    .header {
+        height: 600px;
+        background-position: right 1vw bottom 10px;
+        background-size: 40%;
+    }
+
+    .headerText p {
+        font-size: 2.5vw;
+    }
+
+    .header h1 {
+        font-size: 4vw;
+    }
+
+    .leftbox img {
+        width: 450px;
+    }
+
+    .leftbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        display: block;
+        padding: 20px 0px;
+        margin: 0px 20px;
+    }
+
+}
+
+
+
+
+
+/* ------------------ Small Screen ----------------- */
+
+
+@media only screen and (max-width : 450px) {
+
+    #slidingmenu {
+        transition: 0.4s;
+    }
+
+    .header {
+        height: calc(600px - 25vw);
+        background-position: right 1vw top 250px;
+        background-size: 75%;
+    }
+
+    .headerText {
+        margin: 50px 0;
+    }
+
+    .headerText p {
+        font-size: 13px;
+    }
+
+    .headerText h1 {
+        font-size: 16px;
+    }
+
+    .headerText h1 span {
+        font-size: 25px;
+    }
+
+    
+
+    .aboutcontainer div div img {
+        width: 270px;
+    }
+
+    .about-me h1 {
+        padding-top: 30px;
+        font-size: 24px;
+    }
+
+    .about-me p {
+        padding-top: 5px;
+        font-size: 13px;
+    }
+
+    .about-me-title p {
+        font-size: 14px;
+    }
+
+    .titlecontent ul li span {
+        font-size: 12px;
+    }
+
+    .titlecontent ul li div {
+        font-size: 12px;
+    }
+
+    .row {
+        display: block;
+        padding: 20px 0px;
+        margin: 0px 5px;
+    }
+
+    .projecttile {
+        font-size: 24px;
+    }
+
+
+    .projectcontainer div a {
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .contactleft {
+        flex-basis: 100%;
+    }
+
+    .contactleft h1 {
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+
+    .contactleft p {
+        font-size: 14px;
+    }
+
+    .sociallink {
+        padding-top: 0px;
+    }
+
+    .sociallink div {
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+    }
+
+    .sociallink div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sociallink div a i {
+        font-size: 15px;
+    }
+
+    .btn {
+        border-style: solid;
+        border-color: red;
+        font-size: 10px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 30px 7px;
+    }
+
+    .sub-btn {
+        font-size: 10px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 30px 7px;
+    }
+
+    form input,
+    form textarea {
+        border: none;
+        border-radius: 2px;
+        width: 100%;
+        background-color: rgb(44, 44, 44);
+        color: aliceblue;
+        padding: 5px;
+        margin: 10px 0;
+    }
+
+    
+
+    .navcontainer nav i {
+        display: block;
+        font-size: 20px;
+    }
+
+    .navcontainer nav ul {
+        background-color: red;
+        position: fixed;
+        /* right: 0px; */
+        top: 0px;
+        width: 150px;
+        height: 100vh;
+        padding: 50px 25px;
+        text-align: center;
+        right: -150px;
+        /* transition: right 0.5s; */
+    }
+
+    .navcontainer nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .navcontainer nav ul li {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15%;
+    }
+
+    .navcontainer nav i {
+        cursor: pointer;
+    }
+
+    .navcontainer nav ul i {
+        display: block;
+    }
+
+    .navcontainer nav ul i {
+        cursor: pointer;
+        padding: 15%;
+    }
+}
