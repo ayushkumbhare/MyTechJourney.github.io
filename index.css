@@ -526,7 +526,7 @@ form textarea {
     }
 
     .headerText p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .headerText h1 {
@@ -567,7 +567,7 @@ form textarea {
 
     .row {
         display: block;
-        padding: 20px 0px;
+        padding: 50px 0 20px 0px;
         margin: 0px 5px;
     }
 
