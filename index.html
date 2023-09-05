@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myWorld!!</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dfeb314aea.js" crossorigin="anonymous"></script>
 
@@ -16,7 +16,7 @@
     <div class="header"> 
         <div class="navcontainer container">
             <nav>
-                <a href="#"><img src="Image/logo.png" class="logo"></a>
+                <a href="/portfolio"><img src="Image/logo.png" class="logo"></a>
                 <ul id="slidingmenu">
                     <li><a href="#about" onclick="smallscreen()">About</a></li>
                     <li><a href="#projectsection" onclick="smallscreen()">Project</a></li>
@@ -87,7 +87,7 @@
             <h1 class="projecttile">My Project</h1>
             
             <div class="projectcontainer">
-                <a href="#">
+                <a href="/portfolio">
                     <div>
                         <h2><ul>Portfolio</ul></h2>
                         <p>- Little about me </p>
@@ -97,7 +97,7 @@
                         <b>Visit It >></b>
                     </div>
                 </a>
-                <a href="#">
+                <a href="yournotes">
                     <div>
                         <h2>YourNotes</h2>
                         <p>- Store your own notes.</p>
@@ -107,7 +107,7 @@
                         <b>Visit It >></b>
                     </div>
                 </a>
-                <a href="#">
+                <a href="/auth">
                     <div>
                         <h2>Login Form</h2>
                         <p>- Authenticate yourself.</p>
@@ -119,13 +119,13 @@
                 </a>
                 <div>
                     <h2>News</h2>
-                    <p>Comming soon...</p>
+                    <p>coming soon...</p>
                     <p>Patience will prove to be worthwhile.</p>
                     <a href="#projectsection">Visit It</a> >>
                 </div>
                 <div>
                     <h2>Movie Catalogue</h2>
-                    <p>Comming soon...</p>
+                    <p>coming soon...</p>
                     <p>Patience will prove to be worthwhile.</p>
                     <a href="#projectsection">Visit It</a> >>
                 </div>
@@ -149,7 +149,7 @@
                 </div>
 
                 <div class="contactright">
-                    <form action="#" method="post" >
+                    <form action="/portfolio/connect" method="post" >
                         <input type="text" name="name" id="name" placeholder="Your Name" required minlength="2" maxlength="30">
                         <input type="email" name="email" id="email" placeholder="Your Email" required minlength="5" maxlength="30">
                         <input type="text" name="phone" pattern="\d{10}" placeholder="Your Number">
@@ -163,6 +163,6 @@
 
 </body>
 
-<script src="index.js"></script>
+<script src="portfolio.js"></script>
 
 </html>
