@@ -25,7 +25,7 @@ input[type="number"]:focus {
 
 
 .header {
-    height: max(100vh,600px);
+    height: 700px;
     width: 100%;
     background-image: url("Image/first.png");
     background-repeat: no-repeat;
@@ -107,6 +107,7 @@ nav ul li a:hover::after {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 70px 0px;
+    height: 600px;
 }
 
 
@@ -384,13 +385,6 @@ form textarea {
     display: block;
 }
 
-
-/* -------------------- Screen ---------------- */
-
-/* @media (min-height:450px) and (max-height:720px) {
-
-
-} */
 /* -------------------- Screen ---------------- */
 
 @media (min-width:450px) and (max-width:720px) {
@@ -418,6 +412,7 @@ form textarea {
         display: block;
         padding: 20px 0px;
         margin: 0px 5px;
+        height: 900px;
     }
 
     .contactleft p {
@@ -499,6 +494,7 @@ form textarea {
         display: block;
         padding: 20px 0px;
         margin: 0px 20px;
+        height: 950px;
     }
 
 }
@@ -571,6 +567,7 @@ form textarea {
         display: block;
         padding: 50px 0 20px 0px;
         margin: 0px 5px;
+        height: 800px;
     }
 
     #projectsection {
