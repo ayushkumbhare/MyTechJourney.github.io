@@ -21,10 +21,10 @@ function openmenu() {
   slide.style.right = "0px";
 }
 function closemenu() {
-  slide.style.right = "-200px";
+  slide.style.right = "-100%";
 }
 function smallscreen() {
-  slide.style.right = "-200px";
+  slide.style.right = "-100%";
 }
 
 
