@@ -84,8 +84,8 @@ nav ul li a:hover::after {
 
 
 .typing-text {
-    width: 15ch;
-    animation: typing 1.5s steps(15), blink .5s step-end infinite alternate;
+    width: 16ch;
+    animation: typing 1.5s steps(16), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
