@@ -61,6 +61,7 @@ a {
 nav ul li a {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 nav ul li a::after {
@@ -560,7 +561,7 @@ form textarea {
         font-size: 12px;
     }
 
-    .row {
+    #about .aboutcontainer .row {
         display: block;
         padding: 50px 0 20px 0px;
         margin: 0px 5px;
