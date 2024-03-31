@@ -1,4 +1,13 @@
+:root {
+    --primary-color: crimson;
+    --background-color: rgb(28, 28, 28);
+    --text-color: aliceblue;
+    --hover-color: red;
+    --link-color: azure;
+}
+
 * {
+    -webkit-tap-highlight-color: transparent;
     margin: 0%;
     padding: 0%;
     font-family: 'Montserrat', sans-serif;
@@ -6,15 +15,11 @@
 }
 
 body {
-    background-color: rgb(28, 28, 28);
-    color: aliceblue;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-
-
-
 /* Navbar */
-
 .header {
     height: 700px;
     width: 100%;
@@ -48,9 +53,14 @@ nav ul {
 
 a {
     text-decoration: none;
-    color: aliceblue;
+    color: var(--text-color);
     position: relative;
     font-size: smaller;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul li a::after {
@@ -68,20 +78,34 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* Menu opening Help */
+.navcontainer nav ul i {
+    display: none;
+}
 
+.navcontainer nav i {
+    display: none;
+}
+
+#profile {
+    display: block;
+}
+
+.navcontainer nav ul li .fa-file-arrow-down {
+    display: block;
+    padding: 0 5px;
+}
 
 /* Opening line */
-
 .headerText {
     margin-top: 120px;
 }
 
 .headerText div {
-    color: crimson;
+    color: var(--primary-color);
     margin: 5px 1px;
     font-size: 25px;
 }
-
 
 .typing-text {
     width: 16ch;
@@ -110,13 +134,10 @@ nav ul li a:hover::after {
 }
 
 .headerText h1 span {
-    color: crimson;
+    color: var(--primary-color);
 }
 
-
-
 /* About me Container */
-
 .row {
     display: flex;
     justify-content: space-between;
@@ -124,7 +145,6 @@ nav ul li a:hover::after {
     padding: 70px 0px;
     height: 600px;
 }
-
 
 .leftbox {
     flex-basis: 40%;
@@ -221,11 +241,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
-
-
-
 /* my Projects Container  */
-
 #projectsection {
     padding: 40px 0;
 }
@@ -275,11 +291,7 @@ nav ul li a:hover::after {
     font-weight: 400;
 }
 
-
-
-
 /* Contact me Container */
-
 .contactleft {
     flex-basis: 35%;
 }
@@ -382,26 +394,6 @@ form textarea {
     margin-top: 30px;
 }
 
-
-
-/* Menu opening Help */
-.navcontainer nav ul i {
-    display: none;
-}
-
-.navcontainer nav i {
-    display: none;
-}
-
-#profile {
-    display: block;
-}
-
-
-
-
-
-
 /* -------------------- Screen ---------------- */
 
 @media (min-width:450px) and (max-width:720px) {
@@ -480,7 +472,6 @@ form textarea {
 }
 
 @media (min-width:600px) and (max-width:1050px) {
-
     .header {
         height: 600px;
         background-position: right 1vw bottom 10px;
@@ -516,7 +507,6 @@ form textarea {
 
 
 @media only screen and (max-width : 450px) {
-
     #slidingmenu {
         transition: 0.4s;
         z-index: 1;

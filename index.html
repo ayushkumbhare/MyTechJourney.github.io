@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/dfeb314aea.js" crossorigin="anonymous"></script>
-    
+
     <link rel="icon" type="image/x-icon" href="Image/logo.png">
     <title>myWorld!!</title>
 
 </head>
+
 <body>
-    <div class="header" id="header"> 
+    <div class="header" id="header">
         <div class="navcontainer container">
             <nav>
                 <a href="#"><img src="Image/logo.png" class="logo"></a>
@@ -21,7 +27,8 @@
                     <li><a href="#about" onclick="smallscreen()">About</a></li>
                     <li><a href="#projectsection" onclick="smallscreen()">Project</a></li>
                     <li><a href="#contact" onclick="smallscreen()">Contact</a></li>
-                    <li><a href="Resume/AyushKumbhare_Resume.pdf" download >Resume</a></li>
+                    <li><a href="Resume/AyushKumbhare_Resume.pdf" download> <i class="fa-solid fa-file-arrow-down"></i>
+                            Resume</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -37,7 +44,7 @@
         </div>
     </div>
 
-    
+
     <div id="about">
         <div class="aboutcontainer container">
             <div class="row">
@@ -46,7 +53,11 @@
                 </div>
                 <div class="rightbox about-me">
                     <h1 class="about-me-head">About Me</h1>
-                    <p> I'm Ayush Kumbhare, a student at National Institute of Technology, Nagpur specializing in <b>Web Development</b>. Proficient in languages like <b>C++, JavaScript, and Java,</b> I have a knack for crafting seamless user experiences. My expertise lies in <b>MERN Stack development</b>, where I create dynamic and secure web applications. I'm dedicated to delivering innovative digital solutions. Explore my portfolio to witness my continuous commitment to excellence.</p>
+                    <p>
+                        Ayush Kumbhare, final year student at National Institute of Technology, Nagpur, proficient in
+                        <b>C++, JavaScript, and Java</b>. With expertise in <b>MERN Stack development</b>, dedicated to
+                        crafting seamless user experiences and delivering innovative digital solutions.
+                    </p>
 
                     <div class="about-me-title">
                         <p class="title skill active" onclick="changetab('skill')">Skill</p>
@@ -58,41 +69,73 @@
                         <ul>
                             <li><span><b>WebDev</b></span><br>
                                 <div>- Design, Code, Deploy the Website.</div>
-                                <div>- <b>MERN</b> Stack Developer.</div></li>
+                                <div>- <b>MERN</b> Stack Developer.</div>
+                            </li>
                             <li><span><b>C++ & DSA</b></span><br>
                                 <div>- Skilled coder with strong algorithms expertise.</div>
-                                <div>- Solving Problems on <a href="https://leetcode.com/ayushkumbhare300/"><b>leetcode</b></a></div>
+                                <div>- Solving Problems on <a
+                                        href="https://leetcode.com/ayushkumbhare300/"><b>leetcode</b></a></div>
                             </li>
-                            <li><span><b>CyberSecurity</b></span><br><div>- Web Security testing.</div></li>
-                            <li><span><b>Resume</b></span><br><div class="skills">- <a href="Resume/AyushKumbhare_Resume.pdf" download style="color: rgb(227, 124, 92); text-decoration: underline;">"Download CV"</a></div></li>
-                            
+                            <li><span><b>CyberSecurity</b></span><br>
+                                <div>- Web Security testing.</div>
+                            </li>
+                            <li><span><b>Resume</b></span><br>
+                                <div class="skills">- <a href="Resume/AyushKumbhare_Resume.pdf" download
+                                        style="color: rgb(220,80,20); text-decoration: underline;">"Download CV"</a>
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                     <div class="titlecontent sociallinkcontent" id="sociallinks">
                         <ul>
-                            <li><span><b>GitHub</b></span> - <span> <a target="_blank" href="https://github.com/ayushkumbhare"style="color: rgb(227, 124, 92); text-decoration: underline;">https://github.com/ayushkumbhare</a></span></li>
-                            <li><span><b>LinkedIn</b></span> - <span><a target="_blank" href="https://www.linkedin.com/in/ayush-kumbhare-ak/"style="color: rgb(227, 124, 92); text-decoration: underline;">https://www.linkedin.com/in/ayush-kumbhare-ak/</a></span></li>
-                            <li><span><b>LeetCode</b></span> - <span><a target="_blank" href="https://leetcode.com/ayushkumbhare300/"style="color: rgb(227, 124, 92); text-decoration: underline;">https://https://leetcode.com/ayushkumbhare300/</a></span></li>
-                            <!-- <li><span><b>GitHub</b></span><span>- <a target="_blank" href="https://github.com/ayushkumbhare">https://github.com/ayushkumbhare</a></span></li> -->
+                            <li><span><b>GitHub</b></span> - <span> <a target="_blank"
+                                        href="https://github.com/ayushkumbhare"
+                                        style="font-weight: 600; text-decoration: underline;">/ayushkumbhare</a></span>
+                            </li>
+                            <li><span><b>LinkedIn</b></span> - <span><a target="_blank"
+                                        href="https://www.linkedin.com/in/ayush-kumbhare-ak/"
+                                        style="font-weight: 600; text-decoration: underline;">/ayush-kumbhare-ak</a></span>
+                            </li>
+                            <li><span><b>LeetCode</b></span> - <span><a target="_blank"
+                                        href="https://leetcode.com/ayushkumbhare300/"
+                                        style="font-weight: 600; text-decoration: underline;">/ayushkumbhare300</a></span>
+                            </li>
                         </ul>
                     </div>
                     <div class="titlecontent educationcontent" id="education">
                         <ul>
-                            <li><span><b>10th</b></span><br><div>- Sanskar Vidya Sagar, Nagpur, Maharashtra, India.</div></li>
-                            <li><span><b>12th</b></span><br><div>- St. Pual, Nagpur, Maharashtra, India.</div></li>
-                            <li><span><b>B.Tech</b></span><br><div>- Visvesvaraya National Institute of Technology, India.</div></li>
+                            <li><span><b>B.Tech</b></span><br>
+                                <div>- Visvesvaraya National Institute of Technology, India.</div>
+                            </li>
+                            <li><span><b>12th</b></span><br>
+                                <div>- St. Pual, Nagpur, Maharashtra, India.</div>
+                            </li>
+                            <li><span><b>10th</b></span><br>
+                                <div>- Sanskar Vidya Sagar, Nagpur, Maharashtra, India.</div>
+                            </li>
                         </ul>
                     </div>
                     <div class="titlecontent projectcontent" id="project">
                         <ul>
-                            <li><span><b>Portfolio</b></span><br><div>- The beginning of a journey in Web Development.</div></li>
-                            <li><span><b>YourNotes</b></span><br><div>- Safekeeping your notes.</div></li>
-                            <li><span><b>Travlo</b></span><br><div>- Travel the world.</div></li>
-                            <li><span><b>pdfDownloader</b></span><br><div>- Usa Crime pdfDownloader.</div></li>
-                            <li><span>Chrome Extention</span><br><div>- coming soon...</div></li>
+                            <li><span><b>Portfolio</b></span><br>
+                                <div>- The beginning of my journey.</div>
+                            </li>
+                            <li><span><b>Campus-Connect</b></span><br>
+                                <div>- Safe and secure messaging portal.</div>
+                            </li>
+                            <li><span><b>Travlo</b></span><br>
+                                <div>- Travel the world.</div>
+                            </li>
+                            <li><span><b>News</b></span><br>
+                                <div>- Showcasing news with graphical representation.</div>
+                            </li>
+                            <li><span><b>YourNotes</b></span><br>
+                                <div>- Safekeeping your notes.</div>
+                            </li>
                         </ul>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -102,14 +145,51 @@
     <div id="projectsection">
         <div class="container">
             <h1 class="projecttile">My Project</h1>
-            
+
             <div class="projectcontainer">
                 <a href="#header">
                     <div>
-                        <h2><ul>Portfolio</ul></h2>
-                        <p>- Little about me </p>
-                        <p>- Used <b>HTML</b>, <b>CSS</b> & <b>JavaScript</b>.  Integrated additional projects into this page.</p>
-                        <p>- I have implemented a contact form to facilitate communication, & the data stored using <b>mongoDB</b> dataBase. </p>
+                        <h2>Portfolio</h2>
+                        <p>- Learn a little about me </p>
+                        <p>- Used <b>HTML</b>, <b>CSS</b> & <b>JavaScript</b> to craft an interactive experience.</p>
+                        <p>- Implemented a contact form to facilitate communication, & the data stored using
+                            <b>mongoDB</b> dataBase. </p>
+                        <br>
+                        <b>You are there &#128540;</b>
+                    </div>
+                </a>
+                <a href="https://github.com/VNIT-Final-Year-Project-2024">
+                    <div>
+                        <h2>Campus-Connect</h2>
+                        <b>"Safe and secure messaging portal"</b>
+                        <p>- Developing a real-time chat application with a scalable and resilient backend architecture.
+                        </p>
+                        <p>- Creating a beautiful and user-friendly interface to enhance the user experience.
+                        </p>
+                        <p>- Patience will prove to be worthwhile.</p>
+                        <br>
+                        <b>Track the Progress</b> >>
+                    </div>
+                </a>
+                <a href="https://mark-travlo.netlify.app/">
+                    <div>
+                        <h2>Travlo</h2>
+                        <p>- Developed a travel package booking platform.</p>
+                        <p>- Built using <b>MERN Stack</b> Technology {<b>MongoDB</b>, <b>Expressjs</b>, <b>React</b> &
+                            <b>Nodejs</b>}.</p>
+                        <p>- Frontend is deployed on netlify.</p>
+                        <br>
+                        <b>Visit It >></b>
+                    </div>
+                </a>
+                <a href="https://github.com/ayushkumbhare/BlackCoffer">
+                    <div>
+                        <h2>Black Coffer</h2>
+                        <p>- Created project on MERN stack, storing raw JSON data in MongoDB and optimizing frontend
+                            data retrieval with filtering pipelines.</p>
+                        <p>- Implemented graphical data representation for enhanced user understanding.</p>
+                        <p>- Developed advanced features like news filters and an infinite scrolling fetcher, boosting
+                            usability and efficiency.</p>
                         <br>
                         <b>Visit It >></b>
                     </div>
@@ -118,21 +198,11 @@
                     <div>
                         <h2>YourNotes</h2>
                         <p>- Store your own notes.</p>
-                        <p>- Used <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> & <b>Bootstrap</b>. Store the notes locally.</p>
+                        <p>- Used <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> & <b>Bootstrap</b>. Store the notes
+                            locally.</p>
                         <p>- Notes are effortlessly saved and easily retrievable using <b>mongoDB</b> database.</p>
                         <br>
-                        <b>Visit It >></b>
-                    </div>
-                </a>
-                <a href="https://mark-travlo.netlify.app/">
-                    <div>
-                        <h2>Travlo</h2>
-                        <b>"On going Project"</b><br>
-                        <p>- Developed a travel package booking platform.</p>
-                        <p>- Built using <b>MERN Stack</b> Technology i.e. <b>mongoDB</b>, <b>Expressjs</b>, <b>React</b> & <b>Nodejs</b>.</p>
-                        <p>- Implemented backend login authentication for website security, safeguarding client data.</p>
-                        <br>
-                        <b>Visit It >></b>
+                        <b>Yet to deploy</b>
                     </div>
                 </a>
                 <a href="#projectsection">
@@ -140,28 +210,11 @@
                         <h2>Login Form</h2>
                         <p>- Authenticate yourself.</p>
                         <p>- Backend Technology, to verify the valid user.</p>
-                        <p>- Used <b>mongoDB</b>, <b>Expressjs</b>, <b>Nodejs</b> & other npm packages like &#8594 <b>bcryptjs</b>, <b>jsonwebtoken</b>, <b>validator</b>.</p>
+                        <p>- Used <b>mongoDB</b>, <b>Expressjs</b>, <b>Nodejs</b> & other npm packages like &#8594
+                            <b>bcryptjs</b>, <b>jsonwebtoken</b>, <b>validator</b>.</p>
                         <br>
-                        <b>Visit It >></b>
                     </div>
                 </a>
-                <a href="#pdfDownloader">
-                    <div>
-                        <h2>pdfDownloader</h2>
-                        <b>"On going Project"</b><br>
-                        <p>- Crime pdf pdfDownloader.</p>
-                        <p>- Working on the website to generate crime charts from the fetch API data</p>
-                        <p>- Used <b>React Technology</b>, <b>VictoryChart</b> & other npm packages like &#8594 <b>dom-to-pdf</b> to create graphs to visual showcase the Crime Rate with the Time.</p>
-                        <br>
-                        <b>Visit It >></b>
-                    </div>
-                </a>
-                <div>
-                    <h2>Movie Catalogue</h2>
-                    <p>coming soon...</p>
-                    <p>Patience will prove to be worthwhile.</p>
-                    <a href="#projectsection">Work in Progress</a> >>
-                </div>
             </div>
         </div>
     </div>
@@ -174,19 +227,28 @@
                     <p><i class="fa-sharp fa-solid fa-paper-plane"></i>ayushkumbhare300@gmail.com</p>
                     <p><i class="fa-sharp fa-solid fa-square-phone"></i>9021616118</p>
                     <div class="sociallink">
-                        <div><a href="https://www.linkedin.com/in/ayush-kumbhare-736379202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                        <div><a href="https://leetcode.com/ayushkumbhare300/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg></a></div>
-                        <div><a href="https://www.instagram.com/_ayush_kumbhare_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></div>
+                        <div><a href="https://www.linkedin.com/in/ayush-kumbhare-736379202/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a></div>
+                        <div><a href="https://leetcode.com/ayushkumbhare300/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z" />
+                                </svg></a></div>
+                        <div><a href="https://www.instagram.com/_ayush_kumbhare_/" target="_blank"><i
+                                    class="fa-brands fa-square-instagram"></i></a></div>
                     </div>
                     <a href="Resume/AyushKumbhare_Resume.pdf" download class="btn">Download CV</a>
                 </div>
 
                 <div class="contactright">
-                    <form action="" method="post" >
-                        <input type="text" name="name" id="name" placeholder="Your Name" required minlength="2" maxlength="30">
-                        <input type="email" name="email" id="email" placeholder="Your Email" required minlength="5" maxlength="30">
+                    <form action="" method="post">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required minlength="2"
+                            maxlength="30">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required minlength="5"
+                            maxlength="30">
                         <input type="text" name="phone" pattern="\d{10}" placeholder="Your Number">
-                        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Message" required  minlength="5" maxlength="500"></textarea>
+                        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Message" required minlength="5"
+                            maxlength="500"></textarea>
                         <button type="submit" class="sub-btn">Submit</button>
                     </form>
                 </div>
